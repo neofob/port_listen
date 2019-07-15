@@ -11,7 +11,7 @@ docker:
 
 # Just for testing
 up:
-	docker run --rm -p $(PORT_NUMBER):$(PORT_NUMBER) -e PORT_NUMBER=$() $(DOCKER_NAME):$(DOCKER_TAG)
+	docker run --rm -p $(PORT_NUMBER):$(PORT_NUMBER) -e PORT_NUMBER=$(PORT_NUMBER) $(DOCKER_NAME):$(DOCKER_TAG)
 
 clean:
 	docker rmi $(DOCKER_NAME):$(DOCKER_TAG)
