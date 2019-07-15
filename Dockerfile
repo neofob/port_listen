@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get install -yq ${PKGS} && \
     apt-get autoclean && \
     apt-get autoremove -yq && \
-    rm -fr /tmp/* /var/lib/apt/lists/* 
+    rm -fr /tmp/* /var/lib/apt/lists/*
 
 COPY ./port_listen.sh /
 
