@@ -1,10 +1,9 @@
 # Simple Makefile to build docker
-# 
+#
 DOCKER_NAME ?=neofob/port_listen
 DOCKER_TAG ?=latest
 DOCKERFILE_PATH ?=.
 PORT_NUMBER ?=3000
-
 
 docker:
 	docker build -t $(DOCKER_NAME):$(DOCKER_TAG) $(DOCKERFILE_PATH)
