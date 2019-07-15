@@ -4,7 +4,7 @@ A simple script to listen on a given port
 to be used by other programs*
 
 This script, `port_listen.sh`, returns `1` if the *listen_app* does
-not exit after a timeout; otherwise, it returns 0. It relies on the
+not exit after a timeout; otherwise, it returns `0`. It relies on the
 behavior of `nc/netcat`, which exits once it receives a message. I think,
 I saw...who knows?
 
