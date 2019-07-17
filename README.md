@@ -17,7 +17,7 @@ $ TIMEOUT=60 PORT_NUMBER=4242 ./port_listen.sh
 
 **On a host machine `minnie`**
 ```
-$ echo "Pluto is comming" | nc mickey 4242
+$ echo "Pluto is comming" | nc -q0 mickey 4242
 ```
 
 
